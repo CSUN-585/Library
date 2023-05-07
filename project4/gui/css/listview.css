@@ -1,0 +1,105 @@
+.list-view {
+	-fx-background-insets: 0 0 0 0;
+	-fx-background-radius: 0 0 0 0;
+	-fx-background-color: #303744;
+}
+
+.list-view .corner {
+	-fx-background-color: #232530;
+}
+
+.list-view .column-header-background{
+	-fx-background-color: #232530;
+}
+
+.list-view .column-header-background .label{
+	-fx-background-color: transparent;
+	-fx-text-fill: #d7dae0;
+}
+
+.list-view .column-header .label {
+	-fx-alignment: CENTER_LEFT;
+}
+
+.list-view .column-header,
+.list-view .column-header .filler,
+.list-view .column-header-background .filler {
+	-fx-background-color: transparent;
+}
+
+.column-header.center > .label {
+	-fx-alignment: CENTER;
+}
+
+.check-box .box,
+.check-box:indeterminate .box,
+.check-box:indeterminate:selected .box {
+	-fx-background-color: #232530;
+	-fx-border-color: #282c34;
+	-fx-border-radius: 2;
+	-fx-border-width: 2;
+	-fx-max-width: 14;
+	-fx-max-height: 14;
+}
+
+.check-box:selected .mark {
+	-fx-background-color: #d7dae0;
+	-fx-shape: "M384 690l452-452 60 60-512 512-238-238 60-60z";
+	-fx-max-width: 13;
+	-fx-max-height: 10;
+}
+
+.check-box > .mark {
+	-fx-background-color: #d7dae0;
+	-fx-shape: "M384 690l452-452 60 60-512 512-238-238 60-60z";
+	-fx-max-width: 13;
+	-fx-max-height: 10;
+}
+
+.check-box:selected .box {
+	-fx-background-color: #61afef;
+	-fx-border-color: transparent;
+	-fx-border-radius: 2;
+	-fx-border-width: 2;
+	-fx-max-width: 14;
+	-fx-max-height: 14;
+}
+
+.list-cell:even {
+	-fx-background-color: transparent;
+	-fx-border-color:transparent;
+    -fx-text-fill: #d7dae0;
+}
+.list-cell:odd {
+	-fx-background-color: transparent;
+	-fx-border-color:transparent;
+    -fx-text-fill: #d7dae0;
+}
+
+.list-cell:error {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-text-fill: #E95678;
+}
+
+.list-cell:warning {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-text-fill: #FAB795;
+}
+
+.list-cell:info {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-text-fill: #25B2BC;
+}
+
+.list-cell:selected {
+    -fx-border-color: #c678dd;
+}
+
+.noheader .column-header-background {
+	-fx-max-height: 0;
+	-fx-pref-height: 0;
+	-fx-min-height: 0;
+}

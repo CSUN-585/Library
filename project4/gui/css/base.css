@@ -1,0 +1,18 @@
+@import "button.css";
+@import "combobox.css";
+@import "dialogue.css";
+@import "listview.css";
+@import "tableview.css";
+@import "text.css";
+
+
+.root {
+    -fx-base: #1e2028;
+    -fx-focus-color: #c678dd;
+    -fx-faint-focus-color: #c678dd22;
+}
+
+.tab-pane:focused > .tab-header-area > .headers-region > .tab:selected .focus-indicator {
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+}

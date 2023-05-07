@@ -1,0 +1,63 @@
+.button {
+	-fx-background-color:  #404754;
+    -fx-background-radius: 3;
+    -fx-background-insets: 0;
+    -fx-font-size: 13px;
+    -fx-text-fill: #d7dae0;
+}
+
+.button:pressed {
+	-fx-background-color: #323842;
+	-fx-font-size: 13px;
+}
+
+.button:hover {
+	-fx-background-color: #363d4a;
+	-fx-font-size: 13px;
+}
+
+.start-button {
+    -fx-border-radius: 3;
+    -fx-border-width: 1;
+    -fx-border-color: #27d796;
+}
+
+.start-button:hover {
+    -fx-background-color:  #1eb980;
+    -fx-border-color: #1eb980;
+}
+
+.stop-button {
+    -fx-border-radius: 3;
+    -fx-border-width: 1;
+    -fx-border-color: #e95379;
+}
+
+.stop-button:hover {
+    -fx-background-color: #f43e5c;
+    -fx-border-color: #f43e5c;
+}
+
+.toggle-button {
+	-fx-background-color: #404754;
+	-fx-background-radius: 2;
+    -fx-padding: 0 0 0 0;
+	-fx-max-width: 75px;
+	-fx-font-size: 13px;
+    -fx-font-weight: BOLD;
+	-fx-alignment: CENTER;
+	-fx-text-alignment: CENTER;
+	-fx-text-fill: #d7dae0;
+}
+
+.toggle-button:selected {
+    -fx-background-color: #404754;
+	-fx-background-radius: 2;
+    -fx-padding: 0 0 0 0;
+	-fx-max-width: 75px;
+	-fx-font-size: 13px;
+    -fx-font-weight: BOLD;
+    -fx-text-fill: #d7dae0;
+	-fx-alignment: CENTER;
+	-fx-text-alignment: CENTER;
+}

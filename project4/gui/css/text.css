@@ -1,0 +1,54 @@
+.Label {
+	-fx-background-color:  #404754;
+	-fx-background-radius: 3;
+	-fx-background-insets: 0;
+	-fx-font-size: 13pt;
+	-fx-text-fill: #d7dae0;
+}
+
+.pathLabel {
+    -fx-background-radius: 3;
+    -fx-background-insets: 0;
+    -fx-text-fill: #d7dae0;
+    -fx-background-color: #404754;
+}
+
+.text-field {
+	-fx-background-color:  #404754;
+	-fx-background-radius: 3;
+	-fx-background-insets: 0;
+	-fx-padding: 1 1 1 6;
+	-fx-font-size: 13pt;
+	-fx-text-fill: #d7dae0;
+}
+
+.text-field.error {
+    -fx-background-color: #E9567822;
+    -fx-text-box-border: #E95678;
+    -fx-faint-focus-color: #E9567833;
+}
+
+.text-field.valid {
+    -fx-background-color: #27d79622;
+    -fx-text-box-border: #27d796;
+    -fx-faint-focus-color: #27d79633;
+}
+
+.text-area {
+	-fx-font-family: Consolas;
+	-fx-text-box-border: transparent;
+	-fx-border-color:transparent;
+	-fx-background-radius: 3;
+	-fx-text-fill: #d7dae0;
+	-fx-background-color: #323842;
+}
+
+.text-area .content{
+	-fx-background-radius: 0;
+	-fx-border-color:transparent;
+	-fx-background-color: #323842;
+}
+
+.text-area .corner {
+    -fx-background-color: #303744;
+}
