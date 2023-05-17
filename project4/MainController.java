@@ -18,7 +18,7 @@ public class MainController {
     private Library library;
     private DataBase db;
     private FilteredList<Book> filteredBooks;
-    private FilteredList<LoanRecord> filteredMembers;
+    private FilteredList<LoanRecord> filteredRecords;
     @FXML
     private Menu appMenu, helpMenu;
     @FXML
@@ -129,12 +129,16 @@ public class MainController {
         memberTable.setItems(db.getMembers());
         mbrNameCol.setCellValueFactory(cellData -> cellData.getValue().memberName());
         mbrIdCol.setCellValueFactory(cellData -> cellData.getValue().memberId());
-        mbrCountCol.setCellValueFactory(cellData -> cellData.getValue().getNumBooks());
+        mbrCountCol.setCellValueFactory(cellData -> Bindings.createLongBinding(() ->
+                db.getRecords().stream()
+                        .filter(r -> r.getMember().getMemberId() == cellData.getValue().getMemberId())
+                        .count(),
+                filteredRecords));
     }
 
     private void initRecordsTable() {
-        this.filteredMembers = new FilteredList<>(db.getRecords());
-        recordsTable.setItems(filteredMembers);
+        this.filteredRecords = new FilteredList<>(db.getRecords());
+        recordsTable.setItems(filteredRecords);
         bkISBNCol.setCellValueFactory(cellData -> cellData.getValue().bookISBN());
         bkTitleCol.setCellValueFactory(cellData -> cellData.getValue().bookTitle());
         bkAuthCol.setCellValueFactory(cellData -> cellData.getValue().bookAuthor());
